@@ -43,12 +43,18 @@ header{
     background-color: #98A8A8;
 }
 main,footer{
-    padding: 1.25rem;
+    margin: 0 auto;
+}
+.footer-content{
+    margin: 0 auto;
+    padding-bottom:.7rem;
 }
 button{
     border-style: none;
     font-size: 30rem;
-    text-align:center;
+}
+.button{
+    text-align: center;
 }
 a.skip,
 a.skip:visited{
@@ -136,5 +142,22 @@ a:link.learn{
     padding:1rem;
     border-radius: 15px;
     text-decoration:none;
+    margin-bottom: 2.25rem;
+}
+.learn{
     margin-bottom: 2rem;
+}
+h1,h2,h3,p{
+    padding:0 1.25rem 0 1.25rem;
+}
+footer h3{
+    padding-top:.7rem;
+}
+.about{
+    text-align:center;
+}
+@media screen and (min-width:32.8125em){
+    main, .footer-content{
+        max-width:32.5rem;
+    }
 }
