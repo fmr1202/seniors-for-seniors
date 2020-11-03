@@ -1,4 +1,9 @@
-function openNav() {
-    document.getElementById("theDrawer").style.right = "0rem";}
-function closeNav() {
-    document.getElementById("theDrawer").style.right= "-70rem";}
+function showNav() {
+    if (document.getElementById('theDrawer').style.display === "block"){
+        document.getElementById('theDrawer').style.display = "none";
+    }
+    else{
+        document.getElementById('theDrawer').style.display = "block";
+    }
+        
+    }
