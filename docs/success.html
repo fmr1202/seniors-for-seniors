@@ -13,7 +13,8 @@
     <body>
         <div class="container"><a href="#mainContent" class="skip">Skip to main content</a>
         <header>
-            <button onclick="showNav()" class="menu">Seniors for Seniors</button>
+            <a href="index.html" class="title"><img src="assets/seniors-for-seniors-logo.png" class="logo"></a>
+            <input id="nav-button" class="menu" type="image" alt="open nav" src="assets/nav-open.svg" aria-label="open nav" onclick="showNav()">
             <nav id="navigation" aria-label="Main Navigation">
                 <ul class="drawer" id="theDrawer">
                     <li>
@@ -26,12 +27,15 @@
         </header>
         
         <main id="mainContent">
-            <h1>Success Stories</h1>
+            <div class="important">
+            <h1 class="space">Success Stories</h1>
             <img src="assets/ralph.jpg">
-            <p>One of our long-time residents, Norman, was recently adopted by his new best-friend, Ralph. Ralph says "Bringing Norman home was one of the best decisions I've made in a long time. It makes me happy to have someone by my side all day, who likes to take naps as much as I do!" We're so happy Normal has found his forever home!</p>
+            <div class="info2"><p>One of our long-time residents, Norman, was recently adopted by his new best-friend, Ralph. Ralph says "Bringing Norman home was one of the best decisions I've made in a long time. It makes me happy to have someone by my side all day, who likes to take naps as much as I do!" We're so happy Normal has found his forever home!</p></div>
 
             <img src="assets/phil-and-noreen.jpg">
-            <p>Phil and Noreen reached out to us over the summer, and were interested in adding a member to their family since all of their children and grandchildren no longer lived in the area. After meeting Theo for the first time, they immediately knew he would be the perfect addition and he's been with them ever since!</p>
+            <div class="info2">
+            <p>Phil and Noreen reached out to us over the summer, and were interested in adding a member to their family since all of their children and grandchildren no longer lived in the area. After meeting Theo for the first time, they immediately knew he would be the perfect addition and he's been with them ever since!</p></div>
+        </div>
         </main>
         <footer>
             <div class="footer-content">

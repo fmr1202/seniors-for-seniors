@@ -13,7 +13,8 @@
     <body>
         <div class="container"><a href="#mainContent" class="skip">Skip to main content</a>
         <header>
-            <button onclick="showNav()" class="menu">Seniors for Seniors</button>
+            <a href="index.html" class="title"><img src="assets/seniors-for-seniors-logo.png" class="logo"></a>
+            <input id="nav-button" class="menu" type="image" alt="open nav" src="assets/nav-open.svg" aria-label="open nav" onclick="showNav()">
             <nav id="navigation" aria-label="Main Navigation">
                 <ul class="drawer" id="theDrawer">
                     <li>
@@ -26,23 +27,31 @@
         </header>
         
         <main id="mainContent">
-         <h1>Adoptable Pets</h1>
+            <div class="important">
+         <h1 class="space">Adoptable Pets</h1>
+         <p>Below are all the wonderful senior pets that are looking for their forever homes!</p>
          <img src="assets/edison.jpg">
+         <div class="info">
          <p class="about"><b>Name:</b> Edison<br>
          <b>Age:</b> 14 years old<br>
          <p class="button"><a href="edison.html" class="learn">Learn More About Edison</a></p>
          </p>
+        </div>
          
          <img src="assets/toby.jpg">
+         <div class="info">
          <p class="about"><b>Name:</b> Toby<br>
         <b>Age:</b> 10 years old<br>
          <p class="button"><a href="toby.html" class="learn">Learn More About Toby</a></p></p>
+        </div>
 
          <img src="assets/tiger.jpg">
+         <div class="info">
          <p class="about"><b>Name:</b> Tiger<br>
          <b>Age:</b> 15 years old<br>
          <p class="button"><a href="tiger.html" class="learn">Learn More About Tiger</a></p></p>
-        
+        </div>
+        </div>
         </main>
         <footer>
             <div class="footer-content">
