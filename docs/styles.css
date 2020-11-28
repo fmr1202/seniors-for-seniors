@@ -39,6 +39,7 @@ p{
     margin-bottom: 1.4rem;
 }
 header{
+    padding-top: 1rem;
     text-align: left;
     background-color: #98A8A8;
 }
@@ -76,17 +77,11 @@ nav ul{
 nav li{
     margin-bottom: .25rem;
 }
-nav a,
-nav a:visited{
+nav a{
     padding: .625rem;
     text-decoration:none;
-    font-size: 1.25rem;
 }
-nav a:hover,
-nav a:focus,
-nav a:active{
-    text-transform: uppercase;
-}
+
 
 nav a:active{
     font-weight: 500;
@@ -106,31 +101,26 @@ footer p{
     margin-bottom:0;
 }
 .drawer{
-    height: 50vh;
-    width: 100%;
     z-index: 5000;
     padding-top: .5rem;
-    transition: top 1s;
+    padding-bottom: .5rem;
     list-style-type: none;
-    clear: both;
     background-color: #98A8A8;
     display:none;
-    position:fixed;
+    float:right;
 }
 .menu{
         width: 70px;
         text-align:center; 
-        padding:1.5rem 1rem 1rem 1rem;
+        padding:.5rem 1rem 1rem 1rem;
         z-index: 5000;
         cursor: pointer;
         color:#000000;
         background-color: #98A8A8;
         float:right;
-        
     }
 header{
     background-color: #98A8A8;
-    clear:both;
     overflow:auto;
 }
 #home{
@@ -141,13 +131,46 @@ header{
 a:link{
     margin-bottom:1.5rem;
 }
+
+a:focus{
+    border-style:solid;
+    border-width:1px;
+}
+a:visited{
+    color:#000000;
+}
+a:hover{
+    text-decoration:underline;
+}
+a:active{
+    border-style:solid;
+    border-width:1px;
+}
+a[href^="mailto:"]{
+    margin-bottom:1.5rem;
+}
+a[href^="mailto:"]:hover{
+    text-decoration:underline;
+}
+a[href^="mailto:"]:focus,a[href^="mailto:"]:active{
+    border-style:solid;
+    border-width:1px;
+}
+a[href^="mailto:"]:visited{
+    color:#000000;
+}
 a:link.learn{
     background-color: #6E6050;
     color: #ffffff;
-    padding:1rem;
+    padding:.5rem .75rem;
     border-radius: 15px;
     text-decoration:none;
     margin-bottom: 2.25rem;
+}
+a:hover.learn{
+    border-style:solid;
+    border-color:#ffffff;
+    
 }
 .learn{
     margin-bottom: 2rem;
@@ -164,7 +187,7 @@ footer h3{
 img.logo{
     width: 225px;
     margin-bottom: 0 !important;
-    padding: 1rem 1rem .5rem 1rem;
+    padding: 0rem 1rem .5rem 1rem;
 }
 .space{
     margin-top: 1rem;
@@ -182,10 +205,83 @@ img.logo{
 .info2{
     background-color: #b8a998;
     padding: 1.25rem 0rem .25rem 0rem;
-    margin:0rem 1.25rem 2.5rem 1.25rem;
+    margin:0rem 1.25rem 2.5rem 1.25rem;  
+}
+.error{
+    margin-top:1rem;
+
+}
+.error-img{
+    padding-left: 1.25rem;
+    padding-right:1.25rem;
 }
 @media screen and (min-width:32.8125em){
-    main, .footer-content{
+    main{
         max-width:32.5rem;
+    }
+}
+@media screen and (min-width:45em){
+    html{
+        font-size: 1.05rem;
+    }
+    .grid-container{
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-gap: 1rem;
+        margin: 0 1rem; 
+    }
+    .grid-container2{
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
+        grid-gap:1rem;
+        margin: 0 1rem;
+    }
+    #nav-button{
+        display:none;
+    }
+    .drawer{
+        display: inline;
+    }
+    .drawer li{
+        display:inline;
+    }
+    img.logo{
+        float:left;
+    }
+}
+@media screen and (min-width:56.25em){
+    html{
+        font-size: 1.1rem;
+    }
+    .spotlight{
+        clear:both;
+        overflow:auto;
+    }
+    .spotlight img{
+        float:left;
+        width:15rem;
+    }
+}
+@media screen and (min-width:80.75em){
+main, .footer-content{
+        max-width:none;
+    }
+    .grid-container3{
+        display:grid;
+        grid-template-columns: 2;
+    }
+    .one{
+        grid-column:1/2;
+    }
+    .two{
+        grid-column:2/3;
+    }
+    .three{
+        grid-column:1/2;
+        margin-top:-7rem;
+    }
+    .error-page{
+        max-width: 40rem;
+        margin:0 auto;
     }
 }
